@@ -1,10 +1,13 @@
+import Logo from "../assets/images/cat2.png"
+
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-secondary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Enigma Camp
+            <img src={Logo} alt="logo" style={{width:"60px", height: "auto"}}/>
+            Kitties
           </a>
           <button
             className="navbar-toggler"

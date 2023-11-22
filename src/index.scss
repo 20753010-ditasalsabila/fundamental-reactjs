@@ -1,15 +1,5 @@
-$primary: #ff6e6c;
-$secondary: #67568c;
-$background: #ffffff;
-$primary-text: #1f1235;
-$tertary: #fbdd74;
+@import '/src/assets/styles/theme.scss';
 
-$theme-colors: (
-  primary: $primary,
-  secondary: $secondary,
-  background: $background,
-  primary-text: $primary-text,
-  tertary: $tertary,
-);
-
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+body {
+    font-family: 'Montserrat', sans-serif;
+}

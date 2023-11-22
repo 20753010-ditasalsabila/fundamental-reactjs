@@ -1,0 +1,16 @@
+$primary: #ff6e6c;
+$secondary: #67568c;
+$background: #ffffff;
+$primary-text: #1f1235;
+$tertary: #fbdd74;
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  background: $background,
+  primary-text: $primary-text,
+  tertary: $tertary,
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
