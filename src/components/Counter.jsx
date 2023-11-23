@@ -14,7 +14,7 @@ export default class Counter extends Component {
     // state di luar constructor
     // state = {
         // nilai dari state bisa di isi dengan menggunakan props
-    //     number: this.props.default
+        // number: this.props.default
     // }
 
     decrement() {

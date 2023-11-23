@@ -44,11 +44,7 @@ export default class Parent extends Component {
     return true;
   }
 
-  // lifecycle unmounting, akan dijalankan sebelum diunmounting
-  componentWillUnmount() {
-    console.log("Component did unmounting");
-  }
-
+  // lifecycle unmounting, akan dijalankan sebelum selesai
   render() {
     console.log('render.....');
     return (

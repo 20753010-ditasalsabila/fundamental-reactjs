@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Parent from './components/Parent';
 import Counter from './components/Counter';
 import Number from './components/Number';
+import Header from './components/Header';
 
 export default function App() {
   return (
@@ -15,8 +16,9 @@ export default function App() {
       <TestComponentFunc name="Andi"/> */}
       {/* <Parent name="Dita" age="21 Tahun" /> */}
       {/* <Counter default={0} /> */}
-      <Parent />
+      {/* <Parent /> */}
       {/* <Number default={5}/> */}
+      <Header/>
     </>
   );
 }
