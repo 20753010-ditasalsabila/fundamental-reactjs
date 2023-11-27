@@ -1,21 +1,22 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import withCounter from '../hoc/withCounter';
 
-export default class ClickCounter extends Component {
-  state = {
-    count: 0,
-  };
-
-  handleIncrement = () => {
-    this.setState({
-        count: this.state.count + 1,
-    });
-  }
-  
+class ClickCounter extends Component {
     render() {
+        const { count, increment, decrement } = this.props;
     return (
       <div>
-        <button className='btn btn-secondary' onClick={this.handleIncrement}>Clicked: {this.state.count} Times</button>
+        <button className='btn btn-secondary mx-3' onClick={decrement}>
+            -
+        </button>
+        <span>{count}</span>
+        <button className='btn btn-secondary mx-3' onClick={increment}>
+            +
+        </button>
       </div>
     )
   }
 }
+
+const newClickCounter = withCounter(ClickCounter);
+export default newClickCounter;
